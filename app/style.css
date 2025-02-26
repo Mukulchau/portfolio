@@ -1,0 +1,20 @@
+/* styles.css */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Maximum width for larger screens */
+    border-radius: 50%; /* To make it rounded */
+  }
+  
+  @media (min-width: 768px) {
+    .responsive-img {
+      width: 50%; /* Adjust width for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .responsive-img {
+      width: 25%; /* Adjust width for larger screens */
+    }
+  }
+  
