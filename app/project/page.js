@@ -67,20 +67,20 @@ const projects = [
 const Project = () => {
   return (
     <div className="min-h-screen p-2">
-      <h1 className="text-4xl font-bold text-center mb-8 text-purple-500">My Projects</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-green-500">My Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className=" p-6 rounded-lg  shadow-lg transform transition duration-500 hover:border hover:border-purple-400 dark:border border-gray-600"
+            className=" p-6 rounded-lg  shadow-lg transform transition duration-500 hover:border hover:border-green-400 dark:border border-gray-600"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <Image src={project.imageUrl} alt={project.title} height={'192'} width={'400'} className="w-full h-48 object-cover rounded-t-lg mb-2" />
-            <h2 className="text-2xl font-bold mb-2 text-purple-500">{project.title}</h2>
+            <h2 className="text-2xl font-bold mb-2 text-green-500">{project.title}</h2>
             <p className=" mb-4">{project.description}</p>
-            <Button asChild>
+            <Button asChild className='bg-green-500 hover:bg-green-500'>
        <Link href="/project">View Project</Link>
           </Button>
           </motion.div>

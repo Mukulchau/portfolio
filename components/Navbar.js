@@ -36,7 +36,7 @@ const Navbar = () => {
         onLoaderFinished={() => setProgress(0)}
       />
       <div className="container mx-auto flex justify-around items-center">
-        <div className=" text-lg font-bold  text-purple-500">
+        <div className=" text-lg font-bold  text-green-500">
         <Link
             href="/"
           >
@@ -46,37 +46,37 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6 items-center">
           <Link
             href="/"
-            className=" text-purple-400 hover:scale-105 hover:font-semibold transition-transform duration-300 "
+            className=" text-green-400 hover:scale-105 hover:font-semibold transition-transform duration-300 "
           >
             Home
           </Link>
           <Link
             href="/about"
-            className= " text-purple-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
+            className= " text-green-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
             About
           </Link>
           <Link
             href="/project"
-            className=" text-purple-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
+            className=" text-green-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
             Project
           </Link>
           <Link
             href="/contact"
-            className=" text-purple-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
+            className=" text-green-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
             Contact
           </Link>
-          <div className="text-purple-500">
+          <div className="text-green-500">
           <ModeToggle />
           </div>
         </div>
         <div className="md:hidden flex justify-center items-center">
-       <span className="mx-3"> <ModeToggle /></span>
+       <span className="mx-3 text-green-400"> <ModeToggle /></span>
         <Sheet>
   <SheetTrigger>
-            <div className="text-purple-500">
+            <div className="text-green-500">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -95,30 +95,30 @@ const Navbar = () => {
           </SheetTrigger>
           <SheetContent>
     <SheetHeader>
-      <SheetTitle className="text-center text-purple-500 font-semibold">MukulChauhan</SheetTitle>
+      <SheetTitle className="text-center text-green-500 font-semibold">MukulChauhan</SheetTitle>
       <SheetDescription>
       <div className="flex flex-col justify-center gap-6   items-center">
           <Link
             href="/"
-            className=" text-purple-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
+            className=" text-green-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className=" text-purple-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
+            className=" text-green-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
             About
           </Link>
           <Link
             href="/project"
-            className=" text-purple-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
+            className=" text-green-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
             Project
           </Link>
           <Link
             href="/contact"
-            className=" text-purple-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
+            className=" text-green-400 hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
             Contact
           </Link>
